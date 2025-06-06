@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auto Refresh Tabs</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      padding: 8px 16px;
+      margin: 5px;
+      cursor: pointer;
+    }
+    #tabList {
+      max-height: 200px;
+      overflow-y: auto;
+      margin-bottom: 10px;
+    }
+    .tab-item {
+      padding: 5px;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h3>Auto Refresh Tabs</h3>
+  <button id="refreshTabs">Refresh All Tabs</button>
+  <button id="toggleRefresh">Start Auto-Refresh</button>
+  <h4>Current Tabs:</h4>
+  <div id="tabList"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

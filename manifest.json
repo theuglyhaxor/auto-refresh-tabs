@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Refresh Tabs",
+  "version": "1.0",
+  "description": "Automatically refreshes specific tabs at random intervals between 3-10 seconds",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
